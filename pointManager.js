@@ -19,12 +19,12 @@ function showPoint() {
             + "<td width=13%>" + pointArr[i].avg1 + "</td>"
             + "<td width=13%>"+" <button onclick='edit(" + i + ")'>Sửa</button>"
             + "<button onclick='del(" + i + ")'>Xóa</button>"+ "</td>"+"</tr>"
-        sumcredits += pointArr[i].numcredits
+        sumcredits += +pointArr[i].numcredits
         sum += pointArr[i].avg1*pointArr[i].numcredits;
         avg = sum/sumcredits;
     }
     document.getElementById("output").innerHTML = str;
-    document.getElementById("output1").innerHTML = "Số tín chỉ tích lũy: " + sumcredits.toFixed(0);
+    document.getElementById("output1").innerHTML = "Số tín chỉ tích lũy: " + Number(sumcredits);
     document.getElementById("output2").innerHTML="Trung bình chung: " +avg.toFixed(2)
 }
 function add() {
@@ -46,7 +46,7 @@ function edit(index) {
     let midterm = document.getElementById("midterm").value;
     let endterm = document.getElementById("endterm").value;
     let avg1 = (test*2 + midterm*2 + endterm*6)/10;
-    let newPoin = new Point(name,numcredits, test, midterm, endterm, avg1);
+    let newPoin = new Point(name, numcredits, test, midterm, endterm, avg1);
     pointArr[index] = newPoin;
     showPoint();
 }
