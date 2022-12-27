@@ -1,0 +1,22 @@
+td{
+    text-align: center;
+}
+button{
+    background-color: darkgray;
+}
+#table1{
+    border: 1px;
+    width: 70%;
+    border-spacing: 1px;
+    padding: 0px;
+}
+#table2{
+    border: 1px;
+    width: 70%;
+    border-spacing: 1px;
+    padding: 0px;
+}
+#name1{
+    text-align: left;
+    width: 25%;
+}

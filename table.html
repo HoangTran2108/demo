@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="table.css"/>
+</head>
+<body>
+<label><input type="text" id="name" placeholder="Nhập tên môn"></label>
+<label><input type="text" id="numcredits" placeholder="số tín chỉ"></label>
+<label><input type="text" id="test" placeholder="Kiểm tra"></label>
+<label><input type="text" id="midterm" placeholder="Giữa kỳ"></label>
+<label><input type="text" id="endterm" placeholder="Cuối kỳ"></label>
+<button onclick="add()">Thêm vào</button>
+<br>
+<br>
+<table id="table1">
+    <tr bgcolor="#228b22">
+        <td rowspan=2><b>STT</b></td>
+        <td rowspan=2><b>Tên</b></td>
+        <td rowspan=2><b>Số tín chỉ</b></td>
+        <td colspan=4><b>Điểm</b></td>
+        <td rowspan=2><b></b></td>
+    </tr>
+    <tr bgcolor="#228b22">
+        <td><b>Kiểm tra</b></td>
+        <td><b>Giữa kỳ</b></td>
+        <td><b>Cuối kỳ</b></td>
+        <td><b>Trung bình môn</b></td>
+    </tr>
+    <tbody id="output"></tbody>
+</table>
+<p id="output1"></p>
+<p id="output2"></p>
+</body>
+<script src="point.js"></script>
+<script src="pointManager.js"></script>
+</html>
