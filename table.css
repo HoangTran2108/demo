@@ -1,22 +1,51 @@
-td{
+td {
     text-align: center;
 }
-button{
+button {
     background-color: darkgray;
 }
-#table1{
-    border: 1px;
-    width: 70%;
-    border-spacing: 1px;
-    padding: 0px;
+#addinfor {
+    width: 80%;
+    float: right;
+    background-color: powderblue;
 }
-#table2{
-    border: 1px;
-    width: 70%;
-    border-spacing: 1px;
-    padding: 0px;
+#note {
+    text-align: left;
 }
-#name1{
+#input {
+    text-align: left;
+}
+#table {
+    width: 100%;
+    border-spacing: 15px;
+    background-color: #eefff4;
+}
+#table1 {
+    border: 1px;
+    width: 80%;
+    border-spacing: 1px;
+    padding: 0;
+    float: right;
+}
+#table2 {
+    border: 1px;
+    width: 80%;
+    border-spacing: 1px;
+    padding: 0;
+}
+#name1 {
     text-align: left;
     width: 25%;
+}
+#output1 {
+    text-align: left;
+    background-color: aquamarine;
+}
+#output2 {
+    text-align: left;
+    background-color: aquamarine;
+}
+#output3 {
+    text-align: left;
+    background-color: aquamarine;
 }

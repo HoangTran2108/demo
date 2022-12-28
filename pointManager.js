@@ -24,8 +24,19 @@ function showPoint() {
         avg = sum/sumcredits;
     }
     document.getElementById("output").innerHTML = str;
-    document.getElementById("output1").innerHTML = "Số tín chỉ tích lũy: " + Number(sumcredits);
-    document.getElementById("output2").innerHTML="Trung bình chung: " +avg.toFixed(2)
+    document.getElementById("output1").innerHTML = "Số tín chỉ tích lũy: " + Number(sumcredits) + "/124";
+    document.getElementById("output2").innerHTML="Trung bình chung: " +avg.toFixed(2);
+    if(avg>=9){
+        document.getElementById("output3").innerHTML = "Học lực: Xuất sắc"
+    } else if(avg>=8){
+        document.getElementById("output3").innerHTML = "Học lực: Giỏi"
+    } else if(avg>=6){
+        document.getElementById("output3").innerHTML = "Học lực: Khá"
+    } else if(avg>=5){
+        document.getElementById("output3").innerHTML = "Học lực: Trung bình"
+    } else if(avg<5){
+        document.getElementById("output3").innerHTML = "Học lực: yếu"
+    }
 }
 function add() {
     let name = document.getElementById("name").value;
